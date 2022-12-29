@@ -1,0 +1,199 @@
+{
+    "Description": {
+        "Cost": 1500000,
+        "Rarity": 1,
+        "Purchasable": true,
+        "Manufacturer": "",
+        "Model": "",
+        "UIName": "Hussar",
+        "Id": "chassisdef_hussar_HSR-300-D",
+        "Name": "Hussar",
+        "Details": "A downgrade of the 200 that resently started to appear in the Draconis Combine. Mounting a standard large laser, regular haet sinks and armor, and not advances electronics package, it still fills the role of fast sniper and scout.",
+        "Icon": "uixTxrIcon_hussar"
+    },
+    "MovementCapDefID": "movedef_hussar",
+    "PathingCapDefID": "pathingdef_light",
+    "HardpointDataDefID": "hardpointdatadef_hussar",
+    "PrefabIdentifier": "chrprfmech_hussarbase-001",
+    "PrefabBase": "hussar",
+    "Tonnage": 30,
+    "InitialTonnage": 23.5,
+    "weightClass": "LIGHT",
+    "BattleValue": 3610000,
+    "Heatsinks": 0,
+    "TopSpeed": 210,
+    "TurnRadius": 90,
+    "MaxJumpjets": 10,
+    "Stability": 130,
+    "StabilityDefenses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "SpotterDistanceMultiplier": 1,
+    "VisibilityMultiplier": 1,
+    "SensorRangeMultiplier": 1,
+    "Signature": 0,
+    "Radius": 5,
+    "PunchesWithLeftArm": false,
+    "MeleeDamage": 25,
+    "MeleeInstability": 40,
+    "MeleeToHitModifier": 0,
+    "DFADamage": 50,
+    "DFAToHitModifier": 0,
+    "DFASelfDamage": 50,
+    "DFAInstability": 50,
+    "Locations": [
+        {
+            "Location": "Head",
+            "Hardpoints": [],
+            "Tonnage": 0,
+            "InventorySlots": 1,
+            "MaxArmor": 45,
+            "MaxRearArmor": -1,
+            "InternalStructure": 16
+        },
+        {
+            "Location": "LeftArm",
+            "Hardpoints": [                
+                {
+                    "WeaponMount": "Energy",
+                    "Omni": false
+                }
+            ],
+            "Tonnage": 0,
+            "InventorySlots": 8,
+            "MaxArmor": 60,
+            "MaxRearArmor": -1,
+            "InternalStructure": 30
+        },
+        {
+            "Location": "LeftTorso",
+            "Hardpoints": [
+            ],
+            "Tonnage": 0,
+            "InventorySlots": 10,
+            "MaxArmor": 100,
+            "MaxRearArmor": 50,
+            "InternalStructure": 50
+        },
+        {
+            "Location": "CenterTorso",
+            "Hardpoints": [
+                {
+                    "WeaponMount": "Energy",
+                    "Omni": false
+                },
+                {
+                    "WeaponMount": "AntiPersonnel",
+                    "Omni": false
+                },
+                {
+                    "WeaponMount": "AntiPersonnel",
+                    "Omni": false
+                }
+            ],
+            "Tonnage": 0,
+            "InventorySlots": 4,
+            "MaxArmor": 120,
+            "MaxRearArmor": 60,
+            "InternalStructure": 60
+        },
+        {
+            "Location": "RightTorso",
+            "Hardpoints": [
+            ],
+            "Tonnage": 0,
+            "InventorySlots": 10,
+            "MaxArmor": 100,
+            "MaxRearArmor": 50,
+            "InternalStructure": 50
+        },
+        {
+            "Location": "RightArm",
+            "Hardpoints": [               
+                {
+                    "WeaponMount": "Energy",
+                    "Omni": false
+                }
+            ],
+            "Tonnage": 0,
+            "InventorySlots": 8,
+            "MaxArmor": 60,
+            "MaxRearArmor": -1,
+            "InternalStructure": 30
+        },
+        {
+            "Location": "LeftLeg",
+            "Hardpoints": [],
+            "Tonnage": 0,
+            "InventorySlots": 4,
+            "MaxArmor": 100,
+            "MaxRearArmor": -1,
+            "InternalStructure": 50
+        },
+        {
+            "Location": "RightLeg",
+            "Hardpoints": [],
+            "Tonnage": 0,
+            "InventorySlots": 4,
+            "MaxArmor": 100,
+            "MaxRearArmor": -1,
+            "InternalStructure": 50
+        }
+    ],
+    "LOSSourcePositions": [
+        {
+            "x": 0,
+            "y": 12,
+            "z": 0
+        },
+        {
+            "x": 3,
+            "y": 12,
+            "z": 0
+        },
+        {
+            "x": -3,
+            "y": 12,
+            "z": 0
+        }
+    ],
+    "LOSTargetPositions": [
+        {
+            "x": 0,
+            "y": 12,
+            "z": 0
+        },
+        {
+            "x": 3,
+            "y": 12,
+            "z": 0
+        },
+        {
+            "x": -3,
+            "y": 12,
+            "z": 0
+        },
+        {
+            "x": 2.5,
+            "y": 6,
+            "z": 0
+        },
+        {
+            "x": -2.5,
+            "y": 6,
+            "z": 0
+        }
+    ],
+    "VariantName": "HSR-300-D",
+    "ChassisTags": {
+        "items": [],
+        "tagSetSourceFile": ""
+    },
+    "StockRole": "Scout & Harasser",
+    "YangsThoughts": "The Hussar 300-D is a large laser strapped to an engine. The biggist issue for this 'Mech is it's tissue paper thin armor. Even a meduim laser can puch through an part of this 'Mech and hit the internals. Drop the larger laser for a couple of mediums and lay on some protection if you want to survive in this thing."
+}

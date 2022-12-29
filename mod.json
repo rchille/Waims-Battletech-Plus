@@ -1,0 +1,32 @@
+{
+    "Name": "Waim's Battletech Plus'",
+    "Author": "Waimervin",
+    "Description": "",
+    "Enabled": true,
+    "Version": "1.9.1-1.0",
+    "BattleTechVersionMin": "1.9.1",
+
+    "DependsOn": [ 
+        "CAB-Clan Mech", 
+        "CAB-IS Mech", 
+        "CAB-Misc", 
+        "CAB-Tanks"
+    ],
+
+    "OptionallyDependsOn": [
+        "cFixes",
+        "cFixes2",
+        "CABMechs"
+    ],
+    
+    "ConflictsWith": [],
+
+    "Manifest": [
+        { "Type": "Sprite", "Path": "portraits" },
+        { "Type": "MovementCapabilitiesDef", "Path": "movement" },
+		{ "Type": "UpgradeDef", "Path": "upgrades", "AddToDB": true },
+        { "Type": "ChassisDef", "Path": "chassis", "ShouldMergeJSON": false, "AddToDB": true },
+        { "Type": "MechDef", "Path": "mech", "ShouldMergeJSON": false, "AddToDB": true },
+        { "Type": "ItemCollectionDef", "Path": "ItemCollectionDefsAppend", "ShouldAppendText": true }
+    ]
+}

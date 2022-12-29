@@ -1,0 +1,90 @@
+{
+    "StatName" : null,
+    "RelativeModifier" : 0,
+    "AbsoluteModifier" : 0,
+    "Description" : {
+        "Cost" : 8000000,
+        "Rarity" : 99,
+        "Purchasable" : false,
+        "Manufacturer" : "Star League",
+        "Model" : "Lance Command Beagle Active Probe",
+        "UIName" : "LC BAP Equipment",
+        "Id" : "Gear_Special_Lance_Command_Beagle_ActiveProbe",
+        "Name" : "Beagle Active Probe",
+        "Details" : "The lance Command Beagle Active Probe. When activated, the probe performs a Sensor Lock against all enemies within its radius before entering a cooldown state. This component cannot be mounted along with the ECM component. Additionally, the LC BAP provides a passive damage reduction for the entire lance.",
+        "Icon" : "UixSvgIcon_specialEquip_Sensors"
+    },
+    "BonusValueA" : "+ Area Sensor Lock",
+    "BonusValueB" : "- 10% Dmg. (Lance)",
+    "ComponentType" : "Upgrade",
+    "ComponentSubType" : "Prototype_ElectronicWarfare",
+    "PrefabIdentifier" : "",
+    "BattleValue" : 0,
+    "InventorySize" : 2,
+    "Tonnage" : 1.5,
+    "AllowedLocations" : "All",
+    "DisallowedLocations" : "All",
+    "CriticalComponent" : false,
+    "statusEffects" : [		
+		{
+            "targetingData" : {
+                "effectTriggerType" : "OnActivation",
+                "effectTargetType" : "EnemiesWithinRange",
+				"alsoTargetsCreator" : true,
+                "forceVisRebuild" : true
+            },
+			"effectType" : "ActiveAbility",
+			"Description" :
+			{
+				"Id" : "ActiveProbe_Ping",
+				"Name" : "ACTIVE PROBE PING",
+				"Details" : "Activated ability (uses Firing action). Performs a Sensor Lock against all enemies within its radius, as indicated by the spinning gold ring. Will go into cooldown state after use.",
+				"Icon" : "uixSvgIcon_action_sensorlock"
+			},
+			"activeAbilityEffectData" : 
+			{
+				"abilityName" : "AbilityDef_ActiveProbe_Ping"
+			}
+		},
+        {
+            "durationData" : {
+                "duration" : -1,
+                "stackLimit" : 1
+            },
+            "targetingData" : {
+                "effectTriggerType" : "Passive",
+                "effectTargetType" : "AllLanceMates",
+                "showInTargetPreview" : true,
+                "showInStatusPanel" : true
+            },
+            "effectType" : "StatisticEffect",
+            "Description" : {
+                "Id" : "StatusEffect-LCM-DamageReduction",
+                "Name" : "LANCE COMMAND MODULE",
+                "Details" : "Units in this lance take [AMT] less damage.",
+                "Icon" : "uixSvgIcon_special_Equipment"
+            },
+            "statisticData" : {
+                "appliesEachTick" : false,
+                "effectsPersistAfterDestruction" : false,
+                "statName" : "DamageReductionMultiplierAll",
+                "operation" : "Float_Multiply",
+                "modValue" : "0.9",
+                "modType" : "System.Single",
+                "additionalRules" : "NotSet",
+                "targetCollection" : "NotSet",
+                "targetWeaponCategory" : "NotSet",
+                "targetWeaponType" : "NotSet",
+                "targetAmmoCategory" : "NotSet",
+                "targetWeaponSubType" : "NotSet"
+            },
+            "nature" : "Buff"
+        }
+    ],
+    "ComponentTags" : {
+        "items" : [
+			"BUILT-IN"
+        ],
+        "tagSetSourceFile" : ""
+    }
+}
