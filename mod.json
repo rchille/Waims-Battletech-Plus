@@ -1,10 +1,11 @@
 {
     "Name": "Waim's Battletech Plus'",
-    "Author": "Waimervin",
+    "Version": "1.0",
+    "BattleTechVersion": "1.9.1",
     "Description": "",
+    "Author": "Waimervin",
+    "Website": "",
     "Enabled": true,
-    "Version": "1.9.1-1.0",
-    "BattleTechVersionMin": "1.9.1",
 
     "DependsOn": [ 
         "CAB-Clan Mech", 

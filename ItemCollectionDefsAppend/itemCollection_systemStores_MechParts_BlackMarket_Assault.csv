@@ -1,4 +1,5 @@
 mechdef_stinger_STG-3Gb,MechPart,3,1
 mechdef_mongoose_MON-66,MechPart,3,1
 mechdef_falcon_FLC-4N,MechPart,3,1
-mechdef_hussar_HSR-200-Db,Mech,3,1
+mechdef_hussar_HSR-200-Db,MechPart,3,1
+mechdef_hermesii_HER-2M,MechPart,2,1
