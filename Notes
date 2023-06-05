@@ -1,0 +1,18 @@
+Locations to files
+
+StreamingAssets/data/simGameConstants/SimGameConstants.json
+Has things like refresh timers for contracts, shops, starting campang values, salavge rules, etc
+
+StreamingAssets/data/starsystem/starsystemdef_SYSTEMNAME.json
+Defines the planet in the system, faction control, location, types of shops, etc
+
+StreamingAssets/data/starsystem/starsystemdef_COLLECTIONNAME.json
+Collections of items/mechs in the format:
+name,class,quantity,wieght
+name-> name (as defined in file)
+class-> The existing classes are Mech, MechPart, Weapon, Upgrade, AmmunitionBox, HeatSink and Reference. Reference 
+  means you are referencing another list of items, not an individual item. So one itemCollection can call on other 
+  itemCollections in order to generate its content
+quantity-> Number  
+weigth -> (0-10)0 is infinite and 1-10 is the number of items generated
+
