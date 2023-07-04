@@ -16,3 +16,16 @@ class-> The existing classes are Mech, MechPart, Weapon, Upgrade, AmmunitionBox,
 quantity-> Number  
 weigth -> (0-10)0 is infinite and 1-10 is the number of items generated
 
+Gear
+MASC
+Endosteel
+FeroFiber
+Improved Jumpjets
+TSM
+Gardian ECM
+Beagle Active Probe
+Anti-Missle System
+PPC Capcitor
+Command Cockpit 
+Artemis IV
+Streak SRM
